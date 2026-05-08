@@ -7,7 +7,7 @@ type HijoProps = {
 export default function Hijo({ children }: HijoProps) {
   return (
     <div>
-      este es mi hijo{children}
+      a jose le gustan los hombres{children}
     </div>
   )
 }
