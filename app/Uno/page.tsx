@@ -1,8 +1,16 @@
-import Props from "../props"
-export default function Uno(){
-  return(
+"use client";
+import Props from './props';
+import { useAppContext } from "../contexto/AppContext";
+
+export default function Uno() {
+  const { nombre } = useAppContext();
+
+  return (
     <div>
-      <Props nombre={"Tilin insano"}/>
+      uno
+
+      <Props nombre="este es un props" />
+      {nombre}
     </div>
-  )
+  );
 }
